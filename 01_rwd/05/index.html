@@ -1,0 +1,126 @@
+<!-- ---------- SURVEY FORM ---------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thanks for taking time to evaluate our service</p>
+    <form id="survey-form" action="POST">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="enter your name..."
+            required
+        /></label>
+        <label for="email" id="email-label"
+          >Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="enter your e-mail"
+        /></label>
+        <label for="number" id="number-label"
+          >Number:
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="1"
+            max="999"
+            placeholder="enter your age"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender (required)</legend>
+        <label for="male">
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            value="1"
+            class="inline"
+          />Male</label
+        >
+        <label for="female">
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="2"
+            class="inline"
+          />Female</label
+        >
+        <label for="dropdown"
+          >Country:
+          <select name="dropdown" id="dropdown">
+            <option value="">-Select your Country-</option>
+            <option value="0">Chile</option>
+            <option value="1">Argentina</option>
+            <option value="2">Perú</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Pick your favourites!</legend>
+        <label for="pizza"
+          ><input
+            type="checkbox"
+            name="pizza-checkbox"
+            id="pizza"
+            value="1"
+            class="inline"
+          />Pizza</label
+        >
+        <label for="sushi"
+          ><input
+            type="checkbox"
+            name="sushi-checkbox"
+            id="sushi"
+            value="2"
+            class="inline"
+          />Sushi</label
+        >
+        <label for="burguers"
+          ><input
+            type="checkbox"
+            name="burguers-checkbox"
+            id="burguers"
+            value="2"
+            class="inline"
+          />Burgers</label
+        >
+        <label for="bbq"
+          ><input
+            type="checkbox"
+            name="bbq-checkbox"
+            id="bbq"
+            value="3"
+            class="inline"
+          />BBQ</label
+        >
+        <label for="textarea"
+          >Tell us why!
+          <textarea
+            name="textarea"
+            id="textarea"
+            placeholder="I picked pizza because..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
